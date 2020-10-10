@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Slabo 27px', serif;
+}
+
+/* Scrollbar estilos */
+
+body::-webkit-scrollbar {
+    width: 7px;
+    background-color: black;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 30, 0);;
+    border-radius: 5px;
+}
+
+/* Navegador */
+
+.navbar-container{
+    background-color: rgb(31, 31, 37);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 35px;
+}
+
+.navbar-logo{
+    width: 70px;
+    height: 70px;
+}
+
+.navbar-logo img{
+    width: 100%;
+    height: auto;
+}
+
+.navbar-items{
+    display: flex;
+    flex-direction: row;
+}
+
+.item{
+    list-style: none;
+    margin-left: 25px;
+}
+
+.item a{
+    color: rgb(255, 30, 0);
+    text-decoration: none;
+}
+
+.item a:hover{
+    color: rgba(228, 30, 4, 0.767);
+}
+
+.navbar-mobilMenu{
+    display: none;
+    width: 40px;
+}
+
+.navbar-mobilMenu img{
+    width: 100%;
+    height: auto; 
+}
+
+/* Encabezado */
+
+.header-container{
+    display: flex;
+    justify-content: center;
+}
+
+.header-image{
+    padding: 24px;
+    width: 620px;
+    height: 225px;
+}
+
+.header-image img{
+    width: 100%;
+    height: auto;
+}
+
+/* Seccion INFO */
+
+.section-container-info{
+    background-color: rgb(231, 233, 232);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px;
+}
+
+.section-logo{
+    width: 60px;
+    height: 60px;
+}
+
+.section-logo img{
+    width: 100%;
+    height: auto;  
+}
+
+.section-info{
+    width: 600px;
+}
+
+.section-title {
+    color: rgb(255, 30, 0);
+    font-size: 25px;
+}
+
+.section-about {
+    padding-top: 10px;
+    font-size: 16px;
+}
+
+.secction-icons {
+    display: flex;
+    flex-direction: row;
+}
+
+.secction-icon {
+    width: 24px;
+    height: 24px;
+    padding: 8px;
+}
+
+.secction-icon img{
+    width: 100%;
+    height: auto; 
+}
+
+/* SECTION AVATARS */
+
+.secction-container-avatars{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 24px 60px;
+}
+
+.section-about-avatar{
+    display: flex;
+    align-items: center;
+}
+
+.section-avatar{
+    width: 120px;
+    height: 120px;
+}
+
+.section-avatar img{
+    width: 100%;
+    height: auto;
+}
+
+.section-text{
+    color: rgb(255, 30, 0);
+    padding: 20px 40px;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* FOOTER */
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(31, 31, 37);
+    padding: 10px 60px;
+}
+
+.footer-mail {
+    display: flex;
+    color: rgb(255, 30, 0);
+    padding: 10px;
+}
+
+.footer-carta {
+    width: 20px;
+    height: 20px;
+    padding-right: 10px;
+}
+
+.footer-carta img {
+    width: 100%;
+    height: auto;
+}
+
+.footer-redes{
+    display: flex;
+}
+
+.footer-icon{
+    width: 16px;
+    height: 16px;
+    padding: 10px;
+}
+
+.footer-icon a {
+
+}
+
+.footer-icon img{
+    width: 100%;
+    height: auto;
+}
+
+/* Resonsive Mobil */
+
+@media (max-width: 600px){
+
+    /* Menu */
+
+    .navbar-mobilMenu {
+        display: block;
+    }
+
+    .navbar-menu {
+        display: none;
+    }
+
+    /* Encabezado */
+
+    .header-image {
+        padding: 0px;
+        height: auto;
+    }
+
+    .header-image img {
+        height: 100%;
+    }
+ 
+    /* SECTION INFO */
+
+    .section-logo {
+        display: none;
+    }
+
+    .section-info {
+        margin: 25px;
+    }
+
+    .secction-icons {
+        display: none;
+    }
+
+    /* SECTION AVATARES */
+
+    .secction-container-avatars {
+        display: flex;
+        flex-direction: column;
+        margin: 40px 0px;
+    }
+
+    .section-about-avatar {
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+    }
+
+    .section-avatar{
+        padding: 20px;
+    }
+
+    .section-text h3, .section-text p{
+        background-color: rgb(231, 233, 232);
+        color: #000;
+        border-radius: 15%;
+        padding: 8px;
+    }
+
+    .section-text{
+        padding: 0px;
+        height: 0px;
+    }
+
+    .section-text h3{
+        position: relative;
+        bottom: 160px;
+    }
+
+    .section-text p{
+        position: relative;
+        bottom: 70px;
+    }
+
+    /* FOOTER */
+
+    .footer-container{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
