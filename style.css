@@ -163,7 +163,7 @@ body::-webkit-scrollbar-thumb {
 
 .section-text{
     color: rgb(255, 30, 0);
-    padding: 20px 40px;
+    padding: 20px 20px;
     text-align: center;
     font-size: 16px;
 }
@@ -180,6 +180,7 @@ body::-webkit-scrollbar-thumb {
 
 .footer-mail {
     display: flex;
+    flex-direction: row;
     color: rgb(255, 30, 0);
     padding: 10px;
 }
@@ -197,6 +198,7 @@ body::-webkit-scrollbar-thumb {
 
 .footer-redes{
     display: flex;
+    flex-direction: row;
 }
 
 .footer-icon{
@@ -216,7 +218,7 @@ body::-webkit-scrollbar-thumb {
 
 /* Resonsive Mobil */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 770px) {
 
     /* Menu */
 
@@ -268,7 +270,7 @@ body::-webkit-scrollbar-thumb {
     }
 
     .section-avatar{
-        padding: 20px;
+        padding: 20px 0;
     }
 
     .section-text h3, .section-text p{
@@ -299,5 +301,11 @@ body::-webkit-scrollbar-thumb {
         display: flex;
         flex-direction: column;
     }
+
+    /* .footer-mail {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } */
 }
 
